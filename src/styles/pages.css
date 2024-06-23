@@ -1,17 +1,34 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f4e1d2; /* Soft brown, like a basketball court */
+    color: #333; /* Ensure text is readable */
+    font-family: Arial, sans-serif;
+}
+
 .table-container {
-    margin-top: 20px; /* Adjust the value as needed */
     display: flex;
-    justify-content: center; /* Center the table horizontally */
+    justify-content: flex-start; /* Align content to the top left */
+    padding: 20px;
+}
+
+.table-content {
+    width: 800px; /* Set a fixed width to control the table's size */
+}
+
+.head {
+    width: 100%; /* Ensure the header takes the full width of the container */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 10px; /* Space between header and table */
 }
 
 .styled-table {
+    width: 100%; /* Ensure the table takes the full width of the container */
     border-collapse: collapse;
-    margin: auto;
     font-size: 0.9em;
     font-family: sans-serif;
-    min-width: 250px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    padding: 10px;
 }
 
 .styled-table thead tr {

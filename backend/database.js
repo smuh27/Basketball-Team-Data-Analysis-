@@ -31,6 +31,17 @@ app.get('/api/players', (req, res) => {
     });
 });
 
+app.get('/api/team_stats', (req, res) => {
+    client.query('SELECT * FROM "team_stats"', (err, result) => {
+        if (err) {
+            res.status(500).send(err);
+        } else {
+            res.json(result.rows);
+        } 
+    })
+})
+
+
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });

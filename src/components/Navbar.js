@@ -8,11 +8,11 @@ const Navbar = () => {
             <div className="nav-item home">
                 <Link to="/">Masala Ballas</Link>
             </div>
-            <div className="nav-item about">
-                <Link to="/Roster">Roster</Link>
-            </div>
             <div className="nav-item stats">
-                <Link to="/Stats">Stats</Link>
+                <Link to="/Stats">Team Stats</Link>
+            </div>
+            <div className="nav-item about">
+                <Link to="/Roster">Player Stats</Link>
             </div>
         </div>
     );
